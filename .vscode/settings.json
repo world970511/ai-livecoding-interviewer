@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "extension/out": true,
+        "extension/dist": true,
+        "extension/node_modules": true,
+        "server/venv": true,
+        "server/__pycache__": true
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/server/venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "eslint.workingDirectories": ["extension"],
+    "typescript.tsdk": "extension/node_modules/typescript/lib",
+    "editor.formatOnSave": true
+}

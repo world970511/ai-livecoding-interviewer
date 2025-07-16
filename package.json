@@ -1,0 +1,33 @@
+{
+  "name": "ai-live-coding-interview",
+  "version": "1.0.0",
+  "description": "AI-powered live coding interview simulator",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd extension && npm install && cd ../server && pip install -r requirements.txt",
+    "install:extension": "cd extension && npm install",
+    "install:server": "cd server && pip install -r requirements.txt",
+    "dev:extension": "cd extension && npm run watch",
+    "dev:server": "cd server && python main.py",
+    "dev": "concurrently \"npm run dev:extension\" \"npm run dev:server\"",
+    "package": "cd extension && npm run package",
+    "setup:server": "cd server && python -m venv venv && pip install -r requirements.txt",
+    "test": "cd extension && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-live-coding-interview.git"
+  },
+  "keywords": [
+    "vscode",
+    "extension",
+    "ai",
+    "interview",
+    "coding"
+  ],
+  "author": "Naeun Park",
+  "license": "MIT"
+}

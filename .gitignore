@@ -1,0 +1,42 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Extension
+extension/out/
+extension/dist/
+extension/.vscode-test/
+extension/node_modules/
+*.vsix
+
+# Python
+server/venv/
+server/__pycache__/
+server/*.pyc
+server/.env
+server/*.db
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test
+coverage/
+.nyc_output/
+.pytest_cache/
